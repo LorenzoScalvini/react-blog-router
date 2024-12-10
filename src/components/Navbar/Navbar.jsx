@@ -27,8 +27,8 @@ export default function Navbar() {
         <Link to="/" className={styles.link}>
           Home
         </Link>
-        <Link to="/about" className={styles.link}>
-          About
+        <Link to="/posts" className={styles.link}>
+          posts
         </Link>
         <Link to="/contact" className={styles.link}>
           Contact
