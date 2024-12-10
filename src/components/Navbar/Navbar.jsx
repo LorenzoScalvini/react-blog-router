@@ -30,8 +30,8 @@ export default function Navbar() {
         <Link to="/posts" className={styles.link}>
           posts
         </Link>
-        <Link to="/contact" className={styles.link}>
-          Contact
+        <Link to="/addpost" className={styles.link}>
+          Add Post
         </Link>
       </div>
     </nav>

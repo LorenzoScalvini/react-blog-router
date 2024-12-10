@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "../components/Card/Card"; // Modifica il percorso se necessario
-import style from "./Posts.module.css"; // Crea uno stile separato per questo componente
+import Card from "../components/Card/Card";
+import style from "./Posts.module.css";
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
