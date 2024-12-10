@@ -1,34 +1,40 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
+import styles from "./MainLayout.module.css";
 
-function MainLayout() {
+export default function MainLayout() {
   return (
-    <div>
+    <div className={styles.layout}>
       <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
 
-      <main>
+      <main className={styles.mainContent}>
         <Outlet />
       </main>
 
-      <footer>
-        <p>© 2024 My Website</p>
+      <footer className={styles.footer}>
+        <p>© 2024 Lorenzo Scalvini.</p>
+        <p>
+          Follow us on
+          <a href="https://twitter.com" target="_blank" rel="#">
+            {" "}
+            Twitter
+          </a>
+          ,
+          <a href="https://facebook.com" target="_blank" rel="#">
+            {" "}
+            Facebook
+          </a>
+          , and
+          <a href="https://instagram.com" target="_blank" rel="#">
+            {" "}
+            Instagram
+          </a>
+          .
+        </p>
       </footer>
     </div>
   );
 }
-
-export default MainLayout;
